@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/butOkPassLen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="183dp"
+        android:text="OK" />
+
+    <EditText
+        android:id="@+id/editPassLen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/butOkPassLen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="61dp"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/minPassValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editPassLen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textMinPasLenGlobal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editPassLen"
+        android:layout_alignRight="@+id/editPassLen"
+        android:layout_below="@+id/editPassLen"
+        android:layout_marginTop="43dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textMinPassLenLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textMinPasLenGlobal"
+        android:layout_alignRight="@+id/textMinPasLenGlobal"
+        android:layout_below="@+id/textMinPasLenGlobal"
+        android:layout_marginTop="28dp"
+        android:text="TextView" />
+
+</RelativeLayout>

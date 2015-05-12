@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textLowerGlobal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:text="Specifies that the camera should be disabled. Note that this doesn&apos;t have to be a permanent disabling. The camera can be enabled/disabled dynamically based on context, time, and so on." />
+
+    <Button
+        android:id="@+id/butOkCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkDisable"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="OK" />
+
+    <CheckBox
+        android:id="@+id/checkDisable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textCamera"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Disable camera" />
+
+    <TextView
+        android:id="@+id/textCameraLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/butOkCamera"
+        android:layout_below="@+id/textCamera"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textCameraLocal"
+        android:layout_below="@+id/textLowerGlobal"
+        android:layout_marginTop="17dp"
+        android:text="TextView" />
+
+</RelativeLayout>

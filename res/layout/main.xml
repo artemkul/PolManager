@@ -1,0 +1,100 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="fill"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageButton
+        android:id="@+id/btnToPassWindow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ic_launcher"
+        android:src="@null" />
+		
+
+    <ImageButton
+        android:id="@+id/btnToDeviceLock"
+        android:background="@drawable/ic_devicelock_normal" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnToPassWindow"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@null" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="ToggleButton"
+        android:textOff="Activate"
+        android:textOn="Deactive" />
+
+    <ImageButton
+        android:id="@+id/btnToEncryption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnToCamera"
+        android:layout_alignLeft="@+id/btnToDeviceLock"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnToDeviceLock"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/ic_encription"
+        android:src="@null" />
+
+    <ImageButton
+        android:id="@+id/btnToCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/btnToPassWindow"
+        android:layout_below="@+id/btnToPassWindow"
+        android:background="@drawable/ic_camera"
+        android:src="@null" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnToCamera"
+        android:layout_toRightOf="@+id/btnToPassWindow"
+        android:text="PASSWORD" />
+
+    <TextView
+        android:id="@+id/textHistoryLenLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnToCamera"
+        android:layout_toRightOf="@+id/btnToCamera"
+        android:text="CAMERA" />
+
+    <TextView
+        android:id="@+id/textTimeoutLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnToEncryption"
+        android:layout_toRightOf="@+id/toggleButton1"
+        android:text="ENCRYPTION" />
+
+    <TextView
+        android:id="@+id/textHistoryLenGlobal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnToEncryption"
+        android:layout_alignLeft="@+id/textTimeoutLocal"
+        android:text="DEVICE LOCK" />
+
+    <ImageButton
+        android:id="@+id/btnToDataWipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTimeoutLocal"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_wipe_data"
+        android:src="@null" />
+
+</RelativeLayout>

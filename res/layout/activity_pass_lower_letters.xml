@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textLowerPolitics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:text="@string/hello_world" />
+
+    <EditText
+        android:id="@+id/editLowercase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textLowerPolitics"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/butOkLowercase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editLowercase"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="OK" />
+
+    <TextView
+        android:id="@+id/textLowerGlobal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editLowercase"
+        android:layout_alignRight="@+id/editLowercase"
+        android:layout_below="@+id/butOkLowercase"
+        android:layout_marginTop="31dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textLowerLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textLowerGlobal"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textLowerGlobal"
+        android:layout_marginRight="52dp"
+        android:layout_marginTop="18dp"
+        android:text="TextView" />
+
+</RelativeLayout>

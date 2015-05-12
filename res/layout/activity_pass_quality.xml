@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/butPassQualityUNSPECIFIED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:text="UNSPECIFIED" />
+
+    <Button
+        android:id="@+id/butPassQualitySOMETHING"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/butPassQualityUNSPECIFIED"
+        android:layout_alignRight="@+id/butPassQualityUNSPECIFIED"
+        android:layout_below="@+id/butPassQualityUNSPECIFIED"
+        android:text="SOMETHING" />
+
+    <Button
+        android:id="@+id/butPassQualityNUMERIC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/butPassQualitySOMETHING"
+        android:layout_alignRight="@+id/butPassQualitySOMETHING"
+        android:layout_below="@+id/butPassQualitySOMETHING"
+        android:text="NUMERIC" />
+
+    <Button
+        android:id="@+id/butPassQualityALPHABETIC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/butPassQualityNUMERIC"
+        android:layout_alignRight="@+id/butPassQualityNUMERIC"
+        android:layout_below="@+id/butPassQualityNUMERIC"
+        android:text="ALPHABETIC" />
+
+    <Button
+        android:id="@+id/butPassQualityALPHANUMERIC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/butPassQualityALPHABETIC"
+        android:layout_alignRight="@+id/butPassQualityALPHABETIC"
+        android:layout_centerVertical="true"
+        android:text="ALPHANUMERIC" />
+
+    <Button
+        android:id="@+id/butPassQualityCOMPLEX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/butPassQualityALPHANUMERIC"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/butPassQualityALPHANUMERIC"
+        android:text="COMPLEX" />
+
+    <TextView
+        android:id="@+id/textQualityGlobal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/butPassQualityCOMPLEX"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textQualityLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textQualityGlobal"
+        android:layout_below="@+id/textQualityGlobal"
+        android:text="TextView" />
+
+</RelativeLayout>
